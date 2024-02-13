@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe de entradas y salidas</title>
+  <link rel="stylesheet" href="css/informe.css">
+  <script src="js/informe.js" defer></script>
+</head>
+
+<body>
+  <a id="volver" href="index.html">
+    <div class="flecha-atras"></div>
+  </a>
+  <header>
+    <h1>Informe de entradas y salidas</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Seleccione el rango de fechas</h2>
+      <form id="frmDateRange">
+        <label for="fecha-inicio">Fecha de inicio</label>
+        <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+        <label for="fecha-fin">Fecha de fin</label>
+        <input type="date" id="fecha-fin" name="fecha-fin" required>
+        <button type="submit">Generar informe</button>
+        <button type="reset">Limpiar informe</button>
+      </form>
+    </section>
+    <section>
+      <h2>Informe</h2>
+      <table id="students-table">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th>Estudiante</th>
+            <th>Entrada</th>
+            <th>Salida</th>
+          </tr>
+        </thead>
+        <tbody id="students-table-tbody"></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>Informe de entradas y salidas</p>
+  </footer>
+</body>
+
+</html>

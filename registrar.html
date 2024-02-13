@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar estudiantes</title>
+  <link rel="stylesheet" href="css/registrar.css">
+  <script src="js/face-api.min.js"></script>
+  <script src="js/registrar.js" defer></script>
+</head>
+
+<body>
+  <a id="volver" href="index.html">
+    <div class="flecha-atras"></div>
+  </a>
+  <div id="loading" class="loadingHide">
+    <div id="loadingText">Procesando información</div>
+    <div id="loadingLoader"><span class="loader"></span></div>
+  </div>
+  <div id="container">
+    <h1 style="width: 100%;">Registrar estudiante</h1>
+    <div id="body">
+      <div id="webcam"><video id="video" width="640" height="480" autoplay muted playsinline></video></div>
+      <div id="photos">
+        <div id="photosList">
+          <div id="photo1" class="photo">
+            <canvas id="canvasFaceApi1" width="320" height="240"></canvas>
+            <canvas id="canvas1" width="320" height="240"></canvas>
+            <button id="snap1">Tomar Foto</button>
+          </div>
+          <div id="photo2" class="photo">
+            <canvas id="canvasFaceApi2" width="320" height="240"></canvas>
+            <canvas id="canvas2" width="320" height="240"></canvas>
+            <button id="snap2">Tomar Foto</button>
+          </div>
+          <div id="photo3" class="photo">
+            <canvas id="canvasFaceApi3" width="320" height="240"></canvas>
+            <canvas id="canvas3" width="320" height="240"></canvas>
+            <button id="snap3">Tomar Foto</button>
+          </div>
+          <div id="photo4" class="photo">
+            <canvas id="canvasFaceApi4" width="320" height="240"></canvas>
+            <canvas id="canvas4" width="320" height="240"></canvas>
+            <button id="snap4">Tomar Foto</button>
+          </div>
+          <div id="photo5" class="photo">
+            <canvas id="canvasFaceApi5" width="320" height="240"></canvas>
+            <canvas id="canvas5" width="320" height="240"></canvas>
+            <button id="snap5">Tomar Foto</button>
+          </div>
+          <div id="photo6" class="photo">
+            <form id="photoForm" method="post" enctype="multipart/form-data" autocomplete="off">
+              <input type="text" name="name" id="name" placeholder="Digite el nombre del estudiante">
+              <input type="hidden" name="image1" id="image1">
+              <input type="hidden" name="image2" id="image2">
+              <input type="hidden" name="image3" id="image3">
+              <input type="hidden" name="image4" id="image4">
+              <input type="hidden" name="image5" id="image5">
+              <button type="submit">Registrar estudiante</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

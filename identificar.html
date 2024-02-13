@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identificar estudiantes</title>
+  <link rel="stylesheet" href="css/identificar.css">
+  <script src="js/face-api.min.js"></script>
+  <script src="js/identificar.js" defer></script>
+</head>
+
+<body>
+  <a id="volver" href="index.html">
+    <div class="flecha-atras"></div>
+  </a>
+  <div id="backdrop" style="display: none;">
+    <div>
+      <div id="status">
+        <h2 id="proceso">Identificando estudiante</h2>
+      </div>
+      <div id="student-info">
+        <img id="student-img" alt="Estudiante">
+        <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+        <p id="student-name"><span class="loader"></span></p>
+        <div id="buttons" style="display: none;">
+          <button id="confirmButton">ENTRADA</button>
+          <button id="cancelButton">SALIDA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <h1>Identificar estudiantes</h1>
+    <div id="video-container">
+      <video id="video" width="640" height="480" autoplay muted playsinline></video>
+    </div>
+    <button id="startButton">Identificar estudiante</button>
+  </div>
+</body>
+
+</html>
